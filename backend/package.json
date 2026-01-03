@@ -1,0 +1,27 @@
+{
+  "name": "cpq-backend",
+  "version": "1.0.0",
+  "description": "CPQ System Backend API",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "init-db": "node src/database/init.js"
+  },
+  "keywords": ["cpq", "backend", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "better-sqlite3": "^9.2.2",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "uuid": "^9.0.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

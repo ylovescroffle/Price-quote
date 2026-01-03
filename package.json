@@ -1,24 +1,16 @@
 {
-  "name": "cpq-system",
-  "version": "1.0.0",
-  "description": "Configure, Price, Quote (CPQ) System",
-  "main": "dist/index.js",
-  "type": "module",
+  "name": "cpq-system-fullstack",
+  "version": "2.0.0",
+  "description": "Full-stack CPQ System with Node.js Backend & React Frontend",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
-    "test": "tsx src/examples/demo.ts"
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "init-db": "cd backend && npm run init-db",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build"
   },
-  "keywords": ["cpq", "quote", "pricing", "sales"],
+  "keywords": ["cpq", "quote", "pricing", "fullstack"],
   "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.10.0",
-    "typescript": "^5.3.3",
-    "tsx": "^4.7.0"
-  },
-  "dependencies": {
-    "uuid": "^9.0.1"
-  }
+  "license": "MIT"
 }
